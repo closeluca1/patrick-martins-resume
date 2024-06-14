@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick Lucas Martins</title>
+<meta name="description" content="Oferecemos soluções práticas, ágeis e altamente organizadas, especialmente desenvolvidas para atender às necessidades do seu negócio; Seu resultado é a nossa missão - Hub Result" data-rh="true">
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 10px;
+}
+
+#container {
+    max-width: 1024px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#language-switch {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+h1, h2 {
+    color: #000;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="language-switch">
+            <button onclick="switchLanguage('en')">English</button>
+            <button onclick="switchLanguage('pt')">Português</button>
+        </div>
+        <h1 id="greeting">Hi, I'm Patrick! 😄</h1>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>
+                I'm a passionate Software Developer from Vila Velha, ES, Brazil, with a strong foundation in both front-end and back-end technologies.
+                I love developing web applications, from database management to creating user-friendly front-end interfaces.
+                I also delve into mobile development with React Native when needed.
+                My goal is to transform client ideas into practical and useful tools.
+            </p>
+            <p>
+                Currently, I am focused on enhancing my knowledge in Information Security to ensure the applications I develop are not only functional but also secure.
+            </p>
+            <p>Programming since 2019.</p>
+            <p><small>Motto: "Code e Confia"</small></p>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li>Director of Technology Operations at HubResult</li>
+                <li>Freelance React Native Developer at Shopping Parts</li>
+                <li>Full Stack Web Developer at Dellossi</li>
+                <li>Front-end Web Developer at D A C S Information Technology</li>
+                <li>Web Development Intern at Dado Digital Informática e Eletrônicos</li>
+            </ul>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <p>Bachelor of Technology in Database Development, UNOPAR (2021 - 2023)</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Front-end: React, Vue.js</li>
+                <li>Back-end: Node.js, PHP</li>
+                <li>Databases: MySQL, MongoDB</li>
+                <li>Mobile Development: React Native</li>
+                <li>Others: Information Security, Lean Six Sigma (Green Belt)</li>
+            </ul>
+        </section>
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>React Native – Udemy</li>
+                <li>EXIN ISO 27001: Information Security Fundamentals – Udemy</li>
+                <li>Green Belt Lean Six Sigma – The Council For Six Sigma</li>
+                <li>Various courses on Information Security and LGPD – Enap</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to connect with me!</p>
+            <ul>
+                <li>LinkedIn: <a href="https://linkedin.com/in/p-luca" target="_blank">linkedin.com/in/p-luca</a></li>
+                <li>GitHub: <a href="https://github.com/closeluca1" target="_blank">github.com/closeluca1</a></li>
+                <li>Email: <a href="mailto:cvpatricklucasm@gmail.com">cvpatricklucasm@gmail.com</a></li>
+                <li>YouTube: <a href="#" target="_blank">My Channel</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+    function switchLanguage(language) {
+    const elements = {
+        greeting: {
+            en: "Hi, I'm Patrick! 😄",
+            pt: "Oi, eu sou o Patrick! 😄"
+        },
+        "about-me": {
+            en: `
+                <h2>About Me</h2>
+                <p>
+                    I'm a passionate Software Developer from Vila Velha, ES, Brazil, with a strong foundation in both front-end and back-end technologies.
+                    I love developing web applications, from database management to creating user-friendly front-end interfaces.
+                    I also delve into mobile development with React Native when needed.
+                    My goal is to transform client ideas into practical and useful tools.
+                </p>
+                <p>
+                    Currently, I am focused on enhancing my knowledge in Information Security to ensure the applications I develop are not only functional but also secure.
+                </p>
+                <p>Programming since 2019.</p>
+                <p>Motto: "Code e Confia"</p>
+            `,
+            pt: `
+                <h2>Sobre Mim</h2>
+                <p>
+                    Sou um desenvolvedor de software apaixonado de Vila Velha, ES, Brasil, com uma forte base em tecnologias de front-end e back-end.
+                    Adoro desenvolver aplicações web, desde a gestão de bancos de dados até a criação de interfaces amigáveis ao usuário.
+                    Também me aventuro no desenvolvimento móvel com React Native quando necessário.
+                    Meu objetivo é transformar as ideias dos clientes em ferramentas práticas e úteis.
+                </p>
+                <p>
+                    Atualmente, estou focado em aprimorar meu conhecimento em Segurança da Informação para garantir que as aplicações que desenvolvo sejam funcionais e seguras.
+                </p>
+                <p>Programando desde 2019.</p>
+                <p><small>Meu lema: "Code e Confia"</small></p>
+            `
+        },
+        experience: {
+            en: `
+                <h2>Experience</h2>
+                <ul>
+                    <li>Director of Technology Operations at HubResult</li>
+                    <li>Freelance React Native Developer at Shopping Parts</li>
+                    <li>Full Stack Web Developer at Dellossi</li>
+                    <li>Front-end Web Developer at D A C S Information Technology</li>
+                    <li>Web Development Intern at Dado Digital Informática e Eletrônicos</li>
+                </ul>
+            `,
+            pt: `
+                <h2>Experiência</h2>
+                <ul>
+                    <li>Diretor de Operações de Tecnologia na HubResult</li>
+                    <li>Desenvolvedor React Native Freelancer na Shopping Parts</li>
+                    <li>Desenvolvedor Web Full Stack na Dellossi</li>
+                    <li>Desenvolvedor Web Front-end na D A C S Tecnologia da Informação</li>
+                    <li>Estagiário de Desenvolvimento Web na Dado Digital Informática e Eletrônicos</li>
+                </ul>
+            `
+        },
+        education: {
+            en: `
+                <h2>Education</h2>
+                <p>Bachelor of Technology in Database Development, UNOPAR (2021 - 2023)</p>
+            `,
+            pt: `
+                <h2>Educação</h2>
+                <p>Tecnólogo em Desenvolvimento de Banco de Dados, UNOPAR (2021 - 2023)</p>
+            `
+        },
+        skills: {
+            en: `
+                <h2>Skills</h2>
+                <ul>
+                    <li>Front-end: React, Vue.js</li>
+                    <li>Back-end: Node.js, PHP</li>
+                    <li>Databases: MySQL, MongoDB</li>
+                    <li>Mobile Development: React Native</li>
+                    <li>Others: Information Security, Lean Six Sigma (Green Belt)</li>
+                </ul>
+            `,
+            pt: `
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>Front-end: React, Vue.js</li>
+                    <li>Back-end: Node.js, PHP</li>
+                    <li>Bancos de Dados: MySQL, MongoDB</li>
+                    <li>Desenvolvimento Mobile: React Native</li>
+                    <li>Outros: Segurança da Informação, Lean Six Sigma (Green Belt)</li>
+                </ul>
+            `
+        },
+        certifications: {
+            en: `
+                <h2>Certifications</h2>
+                <ul>
+                    <li>React Native – Udemy</li>
+                    <li>EXIN ISO 27001: Information Security Fundamentals – Udemy</li>
+                    <li>Green Belt Lean Six Sigma – The Council For Six Sigma</li>
+                    <li>Various courses on Information Security and LGPD – Enap</li>
+                </ul>
+            `,
+            pt: `
+                <h2>Certificações</h2>
+                <ul>
+                    <li>React Native – Udemy</li>
+                    <li>EXIN ISO 27001: Fundamentos de Segurança da Informação – Udemy</li>
+                    <li>Green Belt Lean Six Sigma – The Council For Six Sigma</li>
+                    <li>Vários cursos sobre Segurança da Informação e LGPD – Enap</li>
+                </ul>
+            `
+        },
+        contact: {
+            en: `
+                <h2>Contact</h2>
+                <p>Feel free to connect with me!</p>
+                <ul>
+                    <li>LinkedIn: <a href="https://linkedin.com/in/p-luca" target="_blank">linkedin.com/in/p-luca</a></li>
+                    <li>GitHub: <a href="https://github.com/closeluca1" target="_blank">github.com/closeluca1</a></li>
+                    <li>Email: <a href="mailto:cvpatricklucasm@gmail.com">cvpatricklucasm@gmail.com</a></li>
+                    <li>YouTube: <a href="#" target="_blank">My Channel</a></li>
+                </ul>
+            `,
+            pt: `
+                <h2>Contato</h2>
+                <p>Sinta-se à vontade para conectar-se comigo!</p>
+                <ul>
+                    <li>LinkedIn: <a href="https://linkedin.com/in/p-luca" target="_blank">linkedin.com/in/p-luca</a></li>
+                    <li>GitHub: <a href="https://github.com/closeluca1" target="_blank">github.com/closeluca1</a></li>
+                    <li>Email: <a href="mailto:cvpatricklucasm@gmail.com">cvpatricklucasm@gmail.com</a></li>
+                    <li>YouTube: <a href="#" target="_blank">Meu Canal</a></li>
+                </ul>
+            `
+        }
+    };
+
+    document.getElementById('greeting').innerHTML = elements.greeting[language];
+    document.getElementById('about-me').innerHTML = elements['about-me'][language];
+    document.getElementById('experience').innerHTML = elements.experience[language];
+    document.getElementById('education').innerHTML = elements.education[language];
+    document.getElementById('skills').innerHTML = elements.skills[language];
+    document.getElementById('certifications').innerHTML = elements.certifications[language];
+    document.getElementById('contact').innerHTML = elements.contact[language];
+}
+
+    </script>
+</body>
+</html>
