@@ -1,233 +1,460 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patrick Lucas Martins</title>
-    <meta name="description" content="Patrick Martins - Cybersecurity & Software Engineer (Linux | React & Native | Angular | NextJs | Node.js | PHP | MySQL | MongoDB)">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Patrick Martins | Software Engineer & Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Patrick Martins - Desenvolvedor Full Stack (React, Next.js, Node.js, C#, SQL) - @closeluca1"
+    />
+    <meta
+      name="keywords"
+      content="Patrick Lucas, Desenvolvedor, Full Stack, React, Next.js, Node.js, C#, TypeScript, Programador, Freelancer, Software Engineer, Mobile, React Native, SEO, Segurança da Informação, Vila Velha, ES, Programador Freelancer, Consultoria, Desenvolver sistema"
+    />
+
+    <meta name="author" content="Patrick Martins (@closeluca1)" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="pt-BR" />
+
+    <meta
+      property="og:title"
+      content="Patrick Martins | Software Engineer & Full Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Desenvolvedor Full Stack com experiência em sistemas escaláveis."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://closeluca1.github.io/patrick-martins-resume/"
+    />
+    <!-- <meta property="og:image" content="https://seusite.com/imagem-perfil.png" /> -->
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Patrick Martins | Full Stack Dev" />
+    <meta
+      name="twitter:description"
+      content="Software Engineer especializado em Web, Mobile, Segurança e Arquitetura. "
+    />
+    <!-- <meta
+      name="twitter:image"
+      content="https://seusite.com/imagem-perfil.png"
+    /> -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Patrick Martins",
+        "description": "Software Engineer e Desenvolvedor Full Stack.",
+        "url": "https://closeluca1.github.io/patrick-martins-resume/",
+        "jobTitle": "Full Stack Developer",
+        "sameAs": [
+          "https://linkedin.com/in/p-luca",
+          "https://github.com/closeluca1",
+          "https://www.youtube.com/@closeluca1"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "BNP Serviços de Informática"
+        }
+      }
+    </script>
+
+    <link rel="icon" type="image/png" href="favicon.png" />
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 10px;
-        }
-
-        #container {
-            max-width: 1024px;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        #language-switch {
-            text-align: right;
-            margin-bottom: 20px;
-        }
-
-        button {
-            background-color: #333;
-            color: #fff;
-            border: none;
-            padding: 10px 15px;
-            margin-left: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        button:hover {
-            background-color: #555;
-        }
-
-        h1, h2 {
-            color: #000;
-        }
-
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            margin-bottom: 20px;
-        }
-
-        ul {
-            padding-left: 20px;
-            list-style-type: disc;
-            margin-top: 5px;
-        }
-        li {
-            margin-bottom: 10px;
-            margin-top: 4px;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 10px;
+      }
+      #container {
+        max-width: 1024px;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+      #language-switch {
+        text-align: right;
+        margin-bottom: 20px;
+      }
+      button {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        margin-left: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      button:hover {
+        background-color: #555;
+      }
+      h1,
+      h2 {
+        color: #000;
+      }
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      section {
+        margin-bottom: 20px;
+      }
+      ul {
+        padding-left: 20px;
+        list-style: disc;
+        margin-top: 5px;
+      }
+      li {
+        margin-bottom: 10px;
+        margin-top: 4px;
+      }
     </style>
-</head>
-<body>
+  </head>
+
+  <body>
     <div id="container">
-        <div id="language-switch">
-            <button onclick="switchLanguage('en')">English</button>
-            <button onclick="switchLanguage('pt')">Português</button>
-        </div>
-        <h1 id="greeting">Oi, eu sou o Patrick! 😄</h1>
-        
-        <section id="about-me">
-            <h2>Sobre Mim</h2>
-            <p>
-                Sou um desenvolvedor de software de Vila Velha, ES, Brasil, com uma forte base em tecnologias de front-end e back-end.
-                Adoro desenvolver aplicações web, desde a gestão de bancos de dados até a criação de interfaces amigáveis ao usuário.
-                Também me aventuro no desenvolvimento móvel com React Native quando necessário.
-                Meu objetivo é transformar as ideias dos clientes em ferramentas práticas e úteis.
-            </p>
-            <p>
-                Atualmente, estou focado em aprimorar meu conhecimento em Segurança da Informação para garantir que as aplicações que desenvolvo sejam funcionais e seguras.
-            </p>
-            <p>Programando desde 2019.</p>
-            <p><small>Meu lema: "Code e Confia"</small></p>
-        </section>
+      <div id="language-switch">
+        <button onclick="switchLanguage('en')">English</button>
+        <button onclick="switchLanguage('pt')">Português</button>
+      </div>
+      <h1 id="greeting">Oi, eu sou o Patrick! 😄</h1>
 
-        <section id="experience">
-            <h2>Experiência</h2>
+      <section id="about-me">
+        <h2>Sobre Mim</h2>
+        <p>
+          Sou um desenvolvedor de software de Vila Velha, ES, Brasil, com uma
+          forte base em tecnologias de front-end e back-end. Adoro desenvolver
+          aplicações web, desde a gestão de bancos de dados até a criação de
+          interfaces amigáveis ao usuário. Também me aventuro no desenvolvimento
+          móvel com React Native quando necessário. Meu objetivo é transformar
+          as ideias dos clientes em ferramentas práticas e úteis.
+        </p>
+        <p>
+          Atualmente, estou focado em aprimorar meu conhecimento em Segurança da
+          Informação para garantir que as aplicações que desenvolvo sejam
+          funcionais e seguras.
+        </p>
+        <p>Programando desde 2019.</p>
+        <p><small>Meu lema: "Code e Confia"</small></p>
+      </section>
+
+      <section id="experience">
+        <h2>Experiência</h2>
+        <ul>
+          <li>
+            <strong
+              >Desenvolvedor Full Stack em BNP Serviços de Informática (Maio
+              2025 - Atual)</strong
+            >
+
             <ul>
-
-                <li>
-        <strong>Desenvolvedor Junior em BNP Serviços de Informática (Nov 2024 - Atual)</strong>
-        <ul>
-            <li>Experiência prática com Next.js no frontend e C# com arquitetura Vertical Slice no backend.</li>
-            <li>Participação no desenvolvimento de projetos que integram o melhor das tecnologias modernas, com foco em escalabilidade e performance.</li>
-            <li>Experiência adquirida em boas práticas de desenvolvimento, incluindo documentação, versionamento de código e metodologias.</li>
-            <li><strong>Competências:</strong> Trabalho em equipe, Desenvolvimento em CSharp, Desenvolvimento em Nextjs, AzureDevOps</li>
-        </ul>
-    </li>
-                
-                <li>
-        <strong>Auxiliar de Escritório em Prefeitura de Vila Velha (Jan 2022 - Nov 2024)</strong>
-        <ul>
-            <li>Atuação na Secretaria de Educação, no setor de Prestação de Contas, com foco na análise e documentação de processos de despesas.</li>
-            <li>Desenvolvimento de uma planilha de controle financeiro, melhorando a eficiência e a transparência dos relatórios fiscais.</li>
-            <li>Conhecimento das leis, incluindo a LGPD, com participação em cursos e eventos da ENAP.</li>
-            <li><strong>Competências:</strong> Análise de Dados, Automação de Processos, Gestão de Projetos, Excel, LGPD, Pacote Office.</li>
-        </ul>
-    </li>
-                
-
-                <li>
-    <strong>Desenvolvedor Full Stack em Seu Menu Expert</strong>
-    <ul>
-        <li>Desenvolveu aplicações web utilizando Node.js, React.js e TypeScript, com foco em performance e escalabilidade.</li>
-        <li>Designs responsivos e componentes de interface com Tailwind CSS, garantindo uma experiência de usuário fluida em todos os dispositivos.</li>
-        <li>Estratégias de SEO para melhorar a visibilidade do site e o ranking nos motores de busca.</li>
-        <li>Implantação e manutenção do servidor em ambientes Linux, aplicando melhores práticas de segurança e performance.</li>
-        <li><strong>Competências:</strong> Node.js, Linux, React.js, TypeScript, Tailwind CSS, SEO.</li>
-    </ul>
-</li>
-
-                
-    <li>
-        <strong>Diretor de Operações de Tecnologia na HubResult (Set 2023 - Set 2024)</strong>
-        <ul>
-            <li>Liderança estratégica na modernização de infraestrutura, implementando soluções em nuvem para escalabilidade e segurança, com automações em GoLang.</li>
-            <li>Implementação de práticas de DevOps e CI/CD, acelerando o ciclo de vida do software.</li>
-            <li>Fortalecimento da segurança da informação com protocolos baseados na ISO 27001.</li>
-            <li><strong>Competências:</strong> Arquitetura de TI, DevOps, Segurança da Informação, Go, CI/CD, Gestão de Infraestrutura em Nuvem.</li>
-        </ul>
-    </li>
-    <li>
-        <strong>Desenvolvedor React Native Freelancer na Shopping Parts (Jul 2022 - Jul 2023)</strong>
-        <ul>
-            <li>Desenvolvimento de três aplicativos móveis com React Native, integrando clientes, varejistas e entregadores, com pagamentos via Pagar.me.</li>
-            <li>Integração backend com Node.js e Sequelize, utilizando MySQL para gerenciamento eficiente de entregas e transações.</li>
-            <li>Otimização do fluxo de mensagens e notificações para melhorar a comunicação interna do aplicativo.</li>
-            <li><strong>Competências:</strong> React Native, Node.js, MySQL, Integração de Sistemas, Mobile Development.</li>
-        </ul>
-    </li>
-    <li>
-        <strong>Desenvolvedor Web Full Stack na Dellossi (Jan 2021 - Nov 2021)</strong>
-        <ul>
-            <li>Desenvolvimento e segurança de sites, e-commerces e landing pages, em colaboração com equipes de marketing e criação.</li>
-            <li>Aplicação das melhores práticas de segurança e performance.</li>
-            <li><strong>Competências:</strong> WordPress, Desenvolvimento Web, Segurança de Sites, HTML/CSS, JavaScript, SEO.</li>
-        </ul>
-    </li>
-    <li>
-        <strong>Desenvolvedor Web Front-end na D A C S Tecnologia da Informação (Set 2021 - Jan 2022)</strong>
-        <ul>
-            <li>Criação de templates com Figma e refatoração de páginas usando Laravel, Sass e jQuery.</li>
-            <li>Colaboração com o time de backend para garantir funcionalidade e performance.</li>
-            <li><strong>Competências:</strong> Desenvolvimento Front-end, Figma, Laravel, Git, Metodologia Scrum.</li>
-        </ul>
-    </li>
-    <li>
-        <strong>Estagiário de Desenvolvimento Web na Dado Digital Informática e Eletrônicos (Fev 2022 - Mai 2022)</strong>
-        <ul>
-            <li>Criação de artes para o Instagram, mantendo um fluxo de postagens consistente.</li>
-            <li>Aplicação de conhecimento acadêmico em projetos reais para desenvolver soluções práticas.</li>
-            <li><strong>Competências:</strong> Design Gráfico, Mídias Sociais, Figma, Criação Digital.</li>
-        </ul>
-    </li>
-    
-</ul>
-
-        </section>
-
-        <section id="education">
-            <h2>Educação</h2>
-            <p>Tecnólogo em Desenvolvimento de Banco de Dados, UNOPAR (2021 - 2023)</p>
-            <!-- <p>Estudando para Bacharelado em Defesa Cibernética, Estácio de Sá (2024 - 2026)</p> -->
-        </section>
-
-        <section id="skills">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Front-end: React, Angular, NextJs, Figma, Photoshop</li>
-                <li>Back-end: Node.js, C# PHP</li>
-                <li>Bancos de Dados: MySQL, MongoDB, SQLite, Firebase</li>
-                <li>Desenvolvimento Mobile: React Native</li>
-                <li>Outros: Segurança da Informação, Lean Six Sigma (Green Belt)</li>
+              <li>
+                <strong
+                  >Desenvolvedor Junior em BNP Serviços de Informática (Nov 2024
+                  - Maio 2025)</strong
+                >
+              </li>
+              <li>
+                Experiência prática com Next.js no frontend e C# com arquitetura
+                Vertical Slice no backend.
+              </li>
+              <li>
+                Participação no desenvolvimento de projetos que integram o
+                melhor das tecnologias modernas, com foco em escalabilidade e
+                performance.
+              </li>
+              <li>
+                Experiência adquirida em boas práticas de desenvolvimento,
+                incluindo documentação, versionamento de código e metodologias.
+              </li>
+              <li>
+                <strong>Competências:</strong> Trabalho em equipe,
+                Desenvolvimento em CSharp, Desenvolvimento em Nextjs,
+                AzureDevOps
+              </li>
             </ul>
-        </section>
+          </li>
 
-        <section id="certifications">
-            <h2>Certificações</h2>
+          <li>
+            <strong
+              >Freelancer / Full Stack Developer - tchalbagunca.com.br</strong
+            >
             <ul>
-                <li>React Native – Udemy</li>
-                <li>EXIN ISO 27001: Fundamentos de Segurança da Informação – Udemy</li>
-                <li>Green Belt Lean Six Sigma – The Council For Six Sigma</li>
-                <li>Vários cursos sobre Segurança da Informação e LGPD – Enap</li>
+              <li>
+                Criação de plataforma SaaS de limpeza residencial sob demanda.
+              </li>
+              <li>
+                Agendamentos em tempo real, cadastro de profissionais, painel
+                administrativo.
+              </li>
+              <li>
+                Arquitetura desenvolvida visando escalabilidade, com foco em UX
+                e otimização de SEO.
+              </li>
+              <li>
+                <strong>Competências:</strong> React, Node.js, MySQL, VPS,
+                Integração de Serviços, UX, Negócios Digitais.
+              </li>
             </ul>
-        </section>
+          </li>
 
-        <section id="contact">
-            <h2>Contato</h2>
-            <p>Sinta-se à vontade para conectar-se comigo!</p>
+          <li>
+            <strong
+              >Auxiliar de Escritório em Prefeitura de Vila Velha (Jan 2022 -
+              Nov 2024)</strong
+            >
             <ul>
-                <li>LinkedIn: <a href="https://linkedin.com/in/p-luca" target="_blank">linkedin.com/in/p-luca</a></li>
-                <li>GitHub: <a href="https://github.com/closeluca1" target="_blank">github.com/closeluca1</a></li>
-                <li>Email: <a href="mailto:cvpatricklucasm@gmail.com">cvpatricklucasm@gmail.com</a></li>
-                <li>YouTube: <a href="https://www.youtube.com/@closeluca1" target="_blank">Meu Canal</a></li>
+              <li>
+                Atuação na Secretaria de Educação, no setor de Prestação de
+                Contas, com foco na análise e documentação de processos de
+                despesas.
+              </li>
+              <li>
+                Desenvolvimento de uma planilha de controle financeiro,
+                melhorando a eficiência e a transparência dos relatórios
+                fiscais.
+              </li>
+              <li>
+                Conhecimento das leis, incluindo a LGPD, com participação em
+                cursos e eventos da ENAP.
+              </li>
+              <li>
+                <strong>Competências:</strong> Análise de Dados, Automação de
+                Processos, Gestão de Projetos, Excel, LGPD, Pacote Office.
+              </li>
             </ul>
-        </section>
+          </li>
+
+          <li>
+            <strong>Desenvolvedor Full Stack em Seu Menu Expert</strong>
+            <ul>
+              <li>
+                Desenvolveu aplicações web utilizando Node.js, React.js e
+                TypeScript, com foco em performance e escalabilidade.
+              </li>
+              <li>
+                Designs responsivos e componentes de interface com Tailwind CSS,
+                garantindo uma experiência de usuário fluida em todos os
+                dispositivos.
+              </li>
+              <li>
+                Estratégias de SEO para melhorar a visibilidade do site e o
+                ranking nos motores de busca.
+              </li>
+              <li>
+                Implantação e manutenção do servidor em ambientes Linux,
+                aplicando melhores práticas de segurança e performance.
+              </li>
+              <li>
+                <strong>Competências:</strong> Node.js, Linux, React.js,
+                TypeScript, Tailwind CSS, SEO.
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <strong
+              >Diretor de Operações de Tecnologia na HubResult (Set 2023 - Set
+              2024)</strong
+            >
+            <ul>
+              <li>
+                Liderança estratégica na modernização de infraestrutura,
+                implementando soluções em nuvem para escalabilidade e segurança,
+                com automações em GoLang.
+              </li>
+              <li>
+                Implementação de práticas de DevOps e CI/CD, acelerando o ciclo
+                de vida do software.
+              </li>
+              <li>
+                Fortalecimento da segurança da informação com protocolos
+                baseados na ISO 27001.
+              </li>
+              <li>
+                <strong>Competências:</strong> Arquitetura de TI, DevOps,
+                Segurança da Informação, Go, CI/CD, Gestão de Infraestrutura em
+                Nuvem.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong
+              >Desenvolvedor React Native Freelancer na Shopping Parts (Jul 2022
+              - Jul 2023)</strong
+            >
+            <ul>
+              <li>
+                Desenvolvimento de três aplicativos móveis com React Native,
+                integrando clientes, varejistas e entregadores, com pagamentos
+                via Pagar.me.
+              </li>
+              <li>
+                Integração backend com Node.js e Sequelize, utilizando MySQL
+                para gerenciamento eficiente de entregas e transações.
+              </li>
+              <li>
+                Otimização do fluxo de mensagens e notificações para melhorar a
+                comunicação interna do aplicativo.
+              </li>
+              <li>
+                <strong>Competências:</strong> React Native, Node.js, MySQL,
+                Integração de Sistemas, Mobile Development.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong
+              >Desenvolvedor Web Full Stack na Dellossi (Jan 2021 - Nov
+              2021)</strong
+            >
+            <ul>
+              <li>
+                Desenvolvimento e segurança de sites, e-commerces e landing
+                pages, em colaboração com equipes de marketing e criação.
+              </li>
+              <li>
+                Aplicação das melhores práticas de segurança e performance.
+              </li>
+              <li>
+                <strong>Competências:</strong> WordPress, Desenvolvimento Web,
+                Segurança de Sites, HTML/CSS, JavaScript, SEO.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong
+              >Desenvolvedor Web Front-end na D A C S Tecnologia da Informação
+              (Set 2021 - Jan 2022)</strong
+            >
+            <ul>
+              <li>
+                Criação de templates com Figma e refatoração de páginas usando
+                Laravel, Sass e jQuery.
+              </li>
+              <li>
+                Colaboração com o time de backend para garantir funcionalidade e
+                performance.
+              </li>
+              <li>
+                <strong>Competências:</strong> Desenvolvimento Front-end, Figma,
+                Laravel, Git, Metodologia Scrum.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong
+              >Estagiário de Desenvolvimento Web na Dado Digital Informática e
+              Eletrônicos (Fev 2022 - Mai 2022)</strong
+            >
+            <ul>
+              <li>
+                Criação de artes para o Instagram, mantendo um fluxo de
+                postagens consistente.
+              </li>
+              <li>
+                Aplicação de conhecimento acadêmico em projetos reais para
+                desenvolver soluções práticas.
+              </li>
+              <li>
+                <strong>Competências:</strong> Design Gráfico, Mídias Sociais,
+                Figma, Criação Digital.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section id="education">
+        <h2>Educação</h2>
+        <p>
+          Tecnólogo em Desenvolvimento de Banco de Dados, UNOPAR (2021 - 2023)
+        </p>
+        <!-- <p>Estudando para Bacharelado em Defesa Cibernética, Estácio de Sá (2024 - 2026)</p> -->
+      </section>
+
+      <section id="skills">
+        <h2>Habilidades</h2>
+        <ul>
+          <li>Front-end: React, Angular, NextJs, Figma, Photoshop</li>
+          <li>Back-end: Node.js, C# PHP</li>
+          <li>Bancos de Dados: MySQL, MongoDB, SQLite, Firebase</li>
+          <li>Desenvolvimento Mobile: React Native</li>
+          <li>Outros: Segurança da Informação, Lean Six Sigma (Green Belt)</li>
+        </ul>
+      </section>
+
+      <section id="certifications">
+        <h2>Certificações</h2>
+        <ul>
+          <li>Foundatinal C# with Microsoft</li>
+          <li>React Native – Udemy</li>
+          <li>
+            EXIN ISO 27001: Fundamentos de Segurança da Informação – Udemy
+          </li>
+          <li>Green Belt Lean Six Sigma – The Council For Six Sigma</li>
+          <li>Vários cursos sobre Segurança da Informação e LGPD – Enap</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contato</h2>
+        <p>Sinta-se à vontade para conectar-se comigo!</p>
+        <ul>
+          <li>
+            LinkedIn:
+            <a href="https://linkedin.com/in/p-luca" target="_blank"
+              >linkedin.com/in/p-luca</a
+            >
+          </li>
+          <li>
+            GitHub:
+            <a href="https://github.com/closeluca1" target="_blank"
+              >github.com/closeluca1</a
+            >
+          </li>
+          <li>
+            Email:
+            <a href="mailto:cvpatricklucasm@gmail.com"
+              >cvpatricklucasm@gmail.com</a
+            >
+          </li>
+          <li>
+            YouTube:
+            <a href="https://www.youtube.com/@closeluca1" target="_blank"
+              >Meu Canal</a
+            >
+          </li>
+        </ul>
+      </section>
     </div>
 
     <script>
-        function switchLanguage(language) {
-            const elements = {
-                greeting: {
-                    en: "Hi, I'm Patrick! 😄",
-                    pt: "Oi, eu sou o Patrick! 😄"
-                },
-                "about-me": {
-                    en: `
+      function switchLanguage(language) {
+        const elements = {
+          greeting: {
+            en: "Hi, I'm Patrick! 😄",
+            pt: "Oi, eu sou o Patrick! 😄",
+          },
+          "about-me": {
+            en: `
                         <h2>About Me</h2>
                         <p>
                             I'm a passionate Software Developer from Vila Velha, ES, Brazil, with a strong foundation in both front-end and back-end technologies.
@@ -241,7 +468,7 @@
                         <p>Programming since 2019.</p>
                         <p>Motto: "Code e Confia"</p>
                     `,
-                    pt: `
+            pt: `
                         <h2>Sobre Mim</h2>
                         <p>
                             Sou um desenvolvedor de software de Vila Velha, ES, Brasil, com uma forte base em tecnologias de front-end e back-end.
@@ -254,22 +481,36 @@
                         </p>
                         <p>Programando desde 2019.</p>
                         <p><small>Meu lema: "Code e Confia"</small></p>
-                    `
-                },
-                experience: {
-                    en: `
+                    `,
+          },
+          experience: {
+            en: `
                         <h2>Experience</h2>
                         <ul>
 
 <li>
-    <strong>Junior Developer at BNP IT Services (Nov 2024 - Present)</strong>
+    <strong>Full Stack Developer at BNP IT Services (Mai 2025 - Present)</strong>
     <ul>
+        <li><strong>Junior Developer at BNP IT Services (Nov 2024 - Mai 2025)</strong></li>
         <li>Hands-on experience with Next.js on the frontend and C# with Vertical Slice architecture on the backend.</li>
         <li>Development in projects that integrate cutting-edge technologies, focusing on scalability and performance.</li>
         <li>Gained experience in best development practices, including documentation, version control, and methodologies.</li>
         <li><strong>Skills:</strong> Teamwork, C# Development, Next.js Development, AzureDevOps</li>
     </ul>
 </li>
+
+<li>
+    <strong>Freelancer / Full Stack Developer - tchalbagunca.com.br</strong>
+    <ul>
+        <li>Development of an on-demand residential cleaning SaaS platform.</li>
+        <li>Real-time scheduling system, professional registration, admin dashboard.</li>
+        <li>Architecture built with scalability in mind, focusing on UX and SEO optimization.</li>
+        <li>
+            <strong>Skills:</strong> React, Node.js, MySQL, VPS, Service Integration, UX, Digital Business.
+        </li>
+    </ul>
+</li>
+
 
                          <li>
         <strong>Office Assistant at Vila Velha City Hall (Jan 2022 - Nov 2024)</strong>
@@ -339,13 +580,23 @@
 </ul>
 
                     `,
-                    pt: `
+            pt: `
                         <h2>Experiência</h2>
                         <ul>
 
          <li>
-        <strong>Desenvolvedor Junior em BNP Serviços de Informática (Nov 2024 - Atual)</strong>
-        <ul>
+            <strong
+              >Desenvolvedor Full Stack em BNP Serviços de Informática (Maio
+              2025 - Atual)</strong
+            >
+
+            <ul>
+              <li>
+                <strong
+                  >Desenvolvedor Junior em BNP Serviços de Informática (Nov 2024
+                  - Maio 2025)</strong
+                >
+              </li>
             <li>Experiência prática com Next.js no frontend e C# com arquitetura Vertical Slice no backend.</li>
             <li>Participação no desenvolvimento de projetos que integram o melhor das tecnologias modernas, com foco em escalabilidade e performance.</li>
             <li>Experiência adquirida em boas práticas de desenvolvimento, incluindo documentação, versionamento de código e metodologias.</li>
@@ -353,6 +604,28 @@
         </ul>
     </li>
 
+ <li>
+            <strong
+              >Freelancer / Full Stack Developer - tchalbagunca.com.br</strong
+            >
+            <ul>
+              <li>
+                Criação de plataforma SaaS de limpeza residencial sob demanda.
+              </li>
+              <li>
+                Agendamentos em tempo real, cadastro de profissionais, painel
+                administrativo.
+              </li>
+              <li>
+                Arquitetura desenvolvida visando escalabilidade, com foco em UX
+                e otimização de SEO.
+              </li>
+              <li>
+                <strong>Competências:</strong> React, Node.js, MySQL, VPS,
+                Integração de Serviços, UX, Negócios Digitais.
+              </li>
+            </ul>
+          </li>
                 <li>
         <strong>Auxiliar de Escritório na Prefeitura de Vila Velha (Jan 2022 - Nov 2024)</strong>
         <ul>
@@ -407,21 +680,21 @@
     </li>
     
 </ul>
-                    `
-                },
-                education: {
-                    en: `
+                    `,
+          },
+          education: {
+            en: `
                         <h2>Education</h2>
                         <p>Bachelor of Technology in Database Development, UNOPAR (2021 - 2023)</p>
                         
                     `,
-                    pt: `
+            pt: `
                         <h2>Educação</h2>
                         <p>Tecnólogo em Desenvolvimento de Banco de Dados, UNOPAR (2021 - 2023)</p>
-                    `
-                },
-                skills: {
-                    en: `
+                    `,
+          },
+          skills: {
+            en: `
                         <h2>Skills</h2>
                         <ul>
                             <li>Front-end: React, Angular, NextJs, Figma, Photoshop</li>
@@ -431,7 +704,7 @@
                             <li>Other: Information Security, Lean Six Sigma (Green Belt)</li>
                         </ul>
                     `,
-                    pt: `
+            pt: `
                         <h2>Habilidades</h2>
                         <ul>
                             <li>Front-end: React, Angular, NextJs, Figma, Photoshop</li>
@@ -440,30 +713,33 @@
                             <li>Desenvolvimento Mobile: React Native</li>
                             <li>Outros: Segurança da Informação, Lean Six Sigma (Green Belt)</li>
                         </ul>
-                    `
-                },
-                certifications: {
-                    en: `
+                    `,
+          },
+          certifications: {
+            en: `
                         <h2>Certifications</h2>
                         <ul>
+                             <li>Foundatinal C# with Microsoft</li>
                             <li>React Native – Udemy</li>
                             <li>EXIN ISO 27001: Information Security Fundamentals – Udemy</li>
                             <li>Green Belt Lean Six Sigma – The Council For Six Sigma</li>
                             <li>Various courses on Information Security and LGPD – Enap</li>
                         </ul>
                     `,
-                    pt: `
+            pt: `
                         <h2>Certificações</h2>
                         <ul>
+                             <li>Foundatinal C# with Microsoft</li>
+
                             <li>React Native – Udemy</li>
                             <li>EXIN ISO 27001: Fundamentos de Segurança da Informação – Udemy</li>
                             <li>Green Belt Lean Six Sigma – The Council For Six Sigma</li>
                             <li>Vários cursos sobre Segurança da Informação e LGPD – Enap</li>
                         </ul>
-                    `
-                },
-                contact: {
-                    en: `
+                    `,
+          },
+          contact: {
+            en: `
                         <h2>Contact</h2>
                         <p>Feel free to connect with me!</p>
                         <ul>
@@ -473,7 +749,7 @@
                             <li>YouTube: <a href="https://www.youtube.com/@closeluca1" target="_blank">My Channel</a></li>
                         </ul>
                     `,
-                    pt: `
+            pt: `
                         <h2>Contato</h2>
                         <p>Sinta-se à vontade para conectar-se comigo!</p>
                         <ul>
@@ -482,19 +758,25 @@
                             <li>Email: <a href="mailto:cvpatricklucasm@gmail.com">cvpatricklucasm@gmail.com</a></li>
                             <li>YouTube: <a href="https://www.youtube.com/@closeluca1" target="_blank">Meu Canal</a></li>
                         </ul>
-                    `
-                }
-            };
+                    `,
+          },
+        };
 
-            // Updating all the fields with the selected language
-            document.getElementById('greeting').innerHTML = elements.greeting[language];
-            document.getElementById('about-me').innerHTML = elements['about-me'][language];
-            document.getElementById('experience').innerHTML = elements.experience[language];
-            document.getElementById('education').innerHTML = elements.education[language];
-            document.getElementById('skills').innerHTML = elements.skills[language];
-            document.getElementById('certifications').innerHTML = elements.certifications[language];
-            document.getElementById('contact').innerHTML = elements.contact[language];
-        }
+        // Updating all the fields with the selected language
+        document.getElementById("greeting").innerHTML =
+          elements.greeting[language];
+        document.getElementById("about-me").innerHTML =
+          elements["about-me"][language];
+        document.getElementById("experience").innerHTML =
+          elements.experience[language];
+        document.getElementById("education").innerHTML =
+          elements.education[language];
+        document.getElementById("skills").innerHTML = elements.skills[language];
+        document.getElementById("certifications").innerHTML =
+          elements.certifications[language];
+        document.getElementById("contact").innerHTML =
+          elements.contact[language];
+      }
     </script>
-</body>
+  </body>
 </html>
